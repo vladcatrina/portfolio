@@ -1,0 +1,201 @@
+body {
+    background-color: rgb(228, 235, 236);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    overflow-y: scroll;
+}
+
+body {
+    color: #033647;
+}
+
+a {
+    color: #217b99;
+    text-decoration: none;  
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4, h4 {
+    color: #056282;
+}
+
+h3 {
+    margin: 4px 0;
+}
+
+p {
+    text-align: justify;
+    margin: 4px 0;
+    font-size: larger;
+}
+
+summary {
+    font-size: large;
+    margin: 24px 0;
+}
+
+.page-head {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.language-switch {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-weight: bold;
+}
+
+.page-head h1,
+.page-head h2 {
+    margin: 2px 0;
+}
+
+.info {
+    margin-left: 24px;
+}
+
+.image-card {
+    display: inline-block;
+    padding: 0;
+    height: 120px;
+    border-radius: 100%;
+    box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+#portrait {
+    margin: 0;
+    height: 100%;
+}
+
+.container {
+    width: 80%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 1% 2% 2% 2%;
+}
+
+#dev {
+    z-index: 1;
+    padding: 1px 4px;
+    color: #D1F1FC !important;
+    background-color: #056282;
+}
+
+.accordion-item {
+    position: relative;
+}
+
+.accordion-content {
+    height: 0;
+    overflow: hidden;
+}
+
+.accordion-title:hover {
+    text-decoration: underline;
+}
+
+.accordion-title {
+    cursor: pointer;
+}
+
+.accordion-option {
+    position: absolute;
+    top: 4px;
+    right: 12px;
+    height: 0;
+    width: 0;
+    margin: 0;
+}
+
+.accordion-option:after {
+    cursor: pointer;
+    color: #5E6472;
+    font-size: 24px;
+    font-weight: bold;
+    content: '+';
+}
+
+
+.accordion-option:checked:after {
+    content: '-';
+}
+
+.accordion-option:checked + .accordion-content {
+    height: auto;
+}
+
+video {
+    max-width: 100%;
+    margin: 4px 0;
+}
+
+#projects .accordion-item {
+    box-shadow: 1px 1px 2px 1px rgb(0, 0, 0, 0.2);
+    padding: 4px 24px;
+    margin-right: 36px;
+    margin-bottom: 12px;
+}
+
+#projects .accordion-item .accordion-option {
+    right: 36px;
+}
+
+#projects .accordion-label h3 {
+    color: #520925;
+}
+
+table {
+    width: 75%;
+}
+
+td {
+    width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: medium;
+        margin: 0;
+    }
+
+    p {
+        font-size: large;
+    }
+
+    .image-card {
+        height: 80px;
+    }
+
+    .info {
+        margin-left: 12px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .accordion-item {
+        margin: 0 0 4px -8px !important;
+        padding: 4px !important;
+        width: 101%;
+    }
+
+    .accordion-item p {
+        font-size: medium;
+    }
+
+    .language-switch {
+        font-size: small;
+        right: -8px;
+    }
+
+    #projects .accordion-item .accordion-option {
+        right: 24px;
+    }
+}

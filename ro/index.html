@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="page-head">
+            <div class="image-card"><img id="portrait" src="../resume.png" /></div>
+            <div class="info">
+                <h2>Vlad Catrina</h2>
+                <div>
+                    <span id="dev">
+                        Web Developer
+                    </span>
+                </div>
+                <div>
+                    vladcatrina@gmail.com
+                </div>
+            </div>
+
+            <div class="language-switch">
+                <a href="/ro">română</a> |
+                <a href="/en">English</a>
+            </div>
+        </div>
+
+        <summary>
+            <p>
+                Sunt un programator web axat pe Javascript. Îmi place să construiesc interfețe și să scriu cod elegant
+                și refolosibil. Mai jos poți vedea câteva proiecte la care am lucrat recent. Fiecare dintre ele are un
+                repozitoriu GitHub și un mic rezumat video, iar pe două dintre ele le poți încerca pe GitHub Pages.
+            </p>
+        </summary>
+
+        <div id="projects">
+            <h2>Proiecte</h2>
+            <div>
+                <div class="accordion-item">
+                    <label class="accordion-label" for="todo">
+                        <h3 class="accordion-title">RPG Todo</h3>
+                    </label>
+                    <input id="todo" type="checkbox" class="accordion-option">
+
+                    <div class="accordion-content">
+                        <p>
+                            <a href="https://github.com/vladcatrina/svelte-todo">Repozitoriu</a>
+                        </p>
+                        <p>
+                            <a href="https://vladcatrina.github.io/svelte-todo-build/">GitHub Pages</a>
+                        </p>
+                        <p>
+                            Este o aplicație single-page în care îți poți gestiona treburile de zi cu zi.
+                            Sarcinile pot fi de două feluri: Quest și Training. Quest-urile te recompensează cu
+                            experiență, în timp ce Training-urile îți măresc nivelul unei anume abilități. Quest-ul
+                            poate fi condiționat și de atingerea unui anume nivel de abilitate. Ambele tipuri de sarcini
+                            pot fi contratimp, iar aplicația are un dropdown cu notificări, unde poți vedea sarcinile
+                            expirate și pe cele care au intrat în ultimul sfert al timpului alocat.
+                        </p>
+                        <p>
+                            Aplicația a fost realizată cu framework-ul Svelte. Nu are back-end - datele sunt reținute în
+                            local storage. Nu am folosit alte dependințe de JS sau CSS.
+                        </p>
+
+                        <video muted controls preload="none" width="720">
+                            <source src="../videos/todovideo.mp4" type="video/mp4">
+                            Sorry, your browser doesn't support embedded videos.
+                        </video>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <label class="accordion-label" for="football">
+                        <h3 class="accordion-title">Football Portal</h3>
+                    </label>
+                    <input id="football" type="checkbox" class="accordion-option">
+
+                    <div class="accordion-content">
+                        <p>
+                            <a href="https://github.com/vladcatrina/football-portal">Repozitoriu</a>
+                        </p>
+                        <p>
+                            Este un site web în care poți viziona date fotbalistice obținute prin API-ul
+                            Football-Data.org. Datele sunt primite în format JSON și transformate de o aplicație node.js
+                            cu express.js în template-uri HTML cu ajutorul sistemului de templating EJS. Componentele de
+                            tip tabel
+                            sunt generate printr-o singură funcție, care permite derivarea câmpurilor și paginarea;
+                            aceasta returnează atât tabelul HTML cât și un cod Javascript pentru paginare, ambele prin
+                            magia EJS.
+                        </p>
+                        <p>
+                            Fiecare competiție, echipă, meci sau jucător poate avea propriul fir de discuție pe forum.
+                            Aceste fire pot conține comentarii arborescente (recursive). Firele de discuție sunt
+                            reținute într-o colecție MongoDB aflată în cloud.
+                        </p>
+
+                        <video muted controls preload="none" width="720">
+                            <source src="../videos/footballvideo.mp4" type="video/mp4">
+                            Sorry, your browser doesn't support embedded videos.
+                        </video>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <label class="accordion-label" for="zerog">
+                        <h3 class="accordion-title">Zero-G Escape</h3>
+                    </label>
+                    <input id="zerog" type="checkbox" class="accordion-option">
+
+                    <div class="accordion-content">
+                        <p>
+                            <a href="https://github.com/vladcatrina/zerog-escape">Repozitoriu</a>
+                        </p>
+                        <p>
+                            <a href="https://vladcatrina.github.io/zerog-escape/">GitHub Pages</a>
+                        </p>
+                        <p>
+                            În acest joc platformer, un savant țicnit încearcă să scape din propriul laborator, însă laboratorul e
+                            infinit, generând automat câte un nou nivel dintr-o listă predefinită de scheme JSON. Pentru
+                            a evita obstacolele și armele laser automate, savantul are un as în mânecă - poate activa
+                            starea de imponderabilitate (Zero G).
+                        </p>
+                        <p>
+                            Jocul a fost realizat în TypeScript cu engine-ul Phaser.js. Sunetele folosite sunt enumerate
+                            în readme-ul repozitoriului. Grafica este creată tot de mine, mai puțin trupul personajului,
+                            care este o variantă recolorată a trupului <a
+                                href="https://phaser.io/tutorials/making-your-first-phaser-3-game/part1">omulețului din
+                                tutorialul Phaser</a>, și câteva elemente din meniu.
+                        </p>
+                        <p>
+                            Problemele de framerate din videoul de mai jos nu se găsesc în jocul real. Poți verifica
+                            asta urmând link-ul <a href="https://vladcatrina.github.io/zerog-escape/">GitHub Pages</a>.
+                            ;)
+                        </p>
+
+                        <video muted controls preload="none" width="720">
+                            <source src="../videos/zerogvideo.mp4" type="video/mp4">
+                            Sorry, your browser doesn't support embedded videos.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2>Abilități</h2>
+            <div>
+                <table>
+                    <tr>
+                        <td>HTML</td>
+                        <td>intermediar</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>intermediar</td>
+                    </tr>
+                    <tr>
+                        <td>Javascript</td>
+                        <td>intermediar-avansat</td>
+                    </tr>
+                    <tr>
+                        <td>React</td>
+                        <td>intermediar</td>
+                    </tr>
+                    <tr>
+                        <td>React Redux</td>
+                        <td>intermediar</td>
+                    </tr>
+                    <tr>
+                        <td>Node.js</td>
+                        <td>intermediar</td>
+                    </tr>
+                    <tr>
+                        <td>git</td>
+                        <td>începător</td>
+                    </tr>
+                    <tr>
+                        <td>TypeScript</td>
+                        <td>începător</td>
+                    </tr>
+                    <tr>
+                        <td>Svelte</td>
+                        <td>începător</td>
+                    </tr>
+                    <tr>
+                        <td>React Native</td>
+                        <td>începător</td>
+                    </tr>
+                    <tr>
+                        <td>PHP</td>
+                        <td>începător</td>
+                    </tr>
+                    <tr>
+                        <td>SQL</td>
+                        <td>începător</td>
+                    </tr>
+                    <tr>
+                        <td>MongoDB</td>
+                        <td>începător</td>
+                    </tr>
+                    <tr>
+                        <td>Phaser.js</td>
+                        <td>începător</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
